@@ -1,0 +1,27 @@
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+.square-marker {
+    list-style-type: square;
+}
+
+.img-marker {
+    list-style-image: url(../task3/materials/li.svg);
+}
+
+ul ul {
+    list-style-type: none;
+}
+
+.square-marker a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}
