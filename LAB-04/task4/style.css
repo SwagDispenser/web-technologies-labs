@@ -1,10 +1,10 @@
-p.text-background span {
+p.textBackground span {
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
 }
 
-div .text-background span {
+div .textBackground span {
     background-color: yellow;
 
 }
@@ -28,15 +28,15 @@ li > ul {
     list-style-image: url(materials/li.svg);
 }
 
-div > p.text-background {
+div > p.textBackground {
     word-spacing: 50px;
 }
 
-div.bold > p {
+divBold > p {
     font-weight: bold;
 }
 
-div.bold > section > p {
+divBold > section > p {
     line-height: 45px;
 }
 
