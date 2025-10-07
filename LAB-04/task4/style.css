@@ -1,12 +1,16 @@
-p.textBackground span {
+p .text-background span {
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
 }
 
-div .textBackground span {
+div .text-background span {
     background-color: yellow;
 
+}
+
+bold {
+    font-weight: bold;
 }
 
 span span {
@@ -28,16 +32,8 @@ li > ul {
     list-style-image: url(materials/li.svg);
 }
 
-div > p.textBackground {
+div > p.text-background {
     word-spacing: 50px;
-}
-
-divBold > p {
-    font-weight: bold;
-}
-
-divBold > section > p {
-    line-height: 45px;
 }
 
 img + p {

@@ -2,15 +2,15 @@ a {
     color: purple;
 }
 
-.mainLink {
+.main-link {
     color: green;
 }
 
-.squareMarker {
+.square-marker {
     list-style-type: square;
 }
 
-.imgMarker {
+.img-marker {
     list-style-image: url(../task3/materials/li.svg);
 }
 
@@ -18,7 +18,7 @@ ul ul {
     list-style-type: none;
 }
 
-.squareMarker a {
+.square-marker a {
     text-decoration: none;
 }
 

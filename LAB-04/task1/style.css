@@ -13,15 +13,15 @@ p {
     text-align: center;
 }
 
-.pColored {
+.text-colored {
     color: red;
 }
 
-.pNowrap {
+.text-nowrap {
     white-space: nowrap;
 }
 
-.pib {
+.text-marked {
     font-style: italic;
     font-weight: bold;
 }
@@ -30,13 +30,13 @@ p {
     text-shadow: 5px -5px 3px darkslategray;
 }
 
-.divA {
+.block-captalized {
     text-decoration: line-through;
     text-transform: capitalize;
     text-indent: 50px;
 }
 
-.divS {
+.block-spaced {
     letter-spacing: 30px;
     word-spacing: 50px;
 }
