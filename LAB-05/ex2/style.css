@@ -14,12 +14,37 @@ td {
     padding: 10px;
 }
 
-th:nth-child(1) { background-color: #f2dbdb; }
-th:nth-child(2) { background-color: #e5b8b7; }
-th:nth-child(3) { background-color: #d99594; }
-th:nth-child(4) { background-color: #943634; }
-th:nth-child(5) { background-color: #632423; }
+th:nth-child(1) {
+    background-color: #f2dbdb;
+}
 
-tbody tr:nth-child(odd) { background-color: #e5b8b7; color: black; }
-tbody tr:nth-child(even) { background-color: #f2dbdb; color: black; }
-tbody tr td:first-child { background-color: #c0504d; color: white; }
+th:nth-child(2) {
+    background-color: #e5b8b7;
+}
+
+th:nth-child(3) {
+    background-color: #d99594;
+}
+
+th:nth-child(4) {
+    background-color: #943634;
+}
+
+th:nth-child(5) {
+    background-color: #632423;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e5b8b7;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2dbdb;
+    color: black;
+}
+
+tbody tr td:first-child {
+    background-color: #c0504d;
+    color: white;
+}
