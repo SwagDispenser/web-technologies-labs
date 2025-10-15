@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>5.3</title>
+</head>
+<body align="center">
+<h1>Опитування</h1>
+<form action="questionnaire.html" method="get">
+    <fieldset>
+        <legend>Особисте</legend>
+        <label for="login">Login - </label>
+        <input type="text" name="reg" id="login" placeholder="login">
+        <label for="password">Password - </label>
+        <input type="password" name="reg" id="password" placeholder="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6}" placeholder="password">
+        <label for="phone">Phone number - </label>
+        <input type="tel" name="reg" id="phone"  placeholder="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="login">
+        <label for="email">Email - </label>
+        <input type="email" name="reg" id="email" placeholder="your email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <div><label for="date">Today's date - </label>
+            <input type="date" name="reg" id="date"></div>
+        <div><label for="info">Info - </label>
+            <textarea id="info" placeholder="Info"></textarea></div>
+    </fieldset>
+    <fieldset>
+        <legend>Стать</legend>
+        <input type="radio" name="gender" value="male" checked> Чоловік <br>
+        <input type="radio" name="gender" value="female"> Жінка <br>
+        <input type="radio" name="gender" value="secret"> Секрет <br>
+    </fieldset>
+    <fieldset>
+        <legend>Надсилання</legend>
+        <input type="radio" name="time" value="now" checked> Надіслати вже <br>
+        <input type="radio" name="time" value="ten"> Надіслати через десять хвилин <br>
+        <input type="radio" name="time" value="twe"> Надіслати через двадцять хвилин <br>
+    </fieldset>
+    <fieldset>
+        <legend>Вік</legend>
+        <input type="checkbox" name="age" value="fcat"> 18- <br>
+        <input type="checkbox" name="age" value="scat"> 18-25 <br>
+        <input type="checkbox" name="age" value="tcat"> 25-32 <br>
+        <input type="checkbox" name="age" value="focat"> 32+ <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Авто</legend>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="bmw">BMW</option>
+        </select>
+        <div><select id="models" name="models" multiple size="6">
+            <option value="e60">E60</option>
+            <option value="c330">C330</option>
+            <option value="e270">E270</option>
+            <option value="xc80">XC80</option>
+            <option value="f30">F30</option>
+            <option value="g90">G90</option>
+        </select></div>
+    </fieldset>
+    <fieldset>
+        <legend>Колір</legend>
+        <select id="color" name="color">
+            <optgroup label="black">
+                <option value="black">Black</option>
+                <option value="lblack">Light Black</option>
+                <option value="dwhite">Dark Black</option>
+            </optgroup>
+            <optgroup label="white">
+                <option value="white">White</option>
+                <option value="lwhite">Light White</option>
+                <option value="dwhite">Dark White</option>
+            </optgroup>
+            <optgroup label="red">
+                <option value="red">Red</option>
+                <option value="lred">Light Red</option>
+                <option value="dred">Dark Red</option>
+            </optgroup>
+            <optgroup label="blue">
+                <option value="blue">Blue</option>
+                <option value="lblue">Light Blue</option>
+                <option value="dblue">Dark Blue</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <input type="file" accept="audio/*" multiple>
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+</form>
+<form action="questionnaire.html" method="post" enctype="multipart/form-data">
+    <label for="post">Надсилання на сервер - </label>
+    <input type="text" name="description" id="post" placeholder="Що надіслати на сервер?"><br>
+    <input type="file" name="photo">
+    <div><button type="submit">Надіслати</button></div>
+</form>
+</body>
+<footer><a href="index.html">Головна</a></footer>
+</html>

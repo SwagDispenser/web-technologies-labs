@@ -1,0 +1,76 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 10px;;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    background-color: rgb(103, 158, 128);
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+ul ul {
+    list-style-position: inside;
+    font-style: italic;
+    list-style-type: none;
+}
+
+ul ul li {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px 40px;
+    margin-bottom: 10px;
+    background-color: rgb(153, 180, 102);
+    padding-left: 40px;
+}
+
+
+
+ul ul li:nth-child(1) {background-image: url('media/route.png')}
+ul ul li:nth-child(2) {background-image: url('media/ticket.png')}
+ul ul li:nth-child(3) {background-image: url('media/hotel.png')}
+ul ul li:nth-child(4) {background-image: url('media/rental.png')}
+
+ul ul li.second-list:nth-child(1) {background-image: url('media/local-bar.png')}
+ul ul li.second-list:nth-child(2) {background-image: url('media/casino.png')}
+ul ul li.second-list:nth-child(3) {background-image: url('media/museum.png')}
+ul ul li.second-list:nth-child(4) {background-image: url('media/festival.png')}
+
+.headliner-image {
+    background-image: url('media/triple-stripes.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+
+span.headline {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+ul ul span {
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: rgb(218, 106, 32);
+    margin-bottom: 0px;
+
+}
+
+
