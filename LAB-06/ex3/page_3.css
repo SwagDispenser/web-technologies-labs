@@ -1,0 +1,75 @@
+div {
+    box-sizing: border-box;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    margin: 10px;
+    float: left;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px;
+    background: indianred;
+    text-decoration: none;
+}
+
+.site-logo {
+    float: left;
+    width: 70px;
+    height: 60px;
+}
+
+.headliner {
+    margin: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-block {
+    color: white;
+    padding: 20px;
+    background-color: darkred;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.description-block {
+    color: white;
+    background-color: palevioletred;
+    border-radius: 60px;
+}
+
+.description-sub-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.description-sub-block {
+    background-color: red;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+
+

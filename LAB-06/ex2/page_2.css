@@ -1,0 +1,169 @@
+div {
+    box-sizing: border-box;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    margin: 10px;
+    float: left;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+div {
+    display: block;
+    width: 1140px;
+    align-items: center;
+    padding: 20px;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px;
+    background: indianred;
+    text-decoration: none;
+}
+
+.site-logo {
+    float: left;
+    width: 70px;
+    height: 60px;
+}
+
+.block-menu {
+    list-style: none;
+    margin-left: 1000px;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+span {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.block-rounded {
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.block-leaf {
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    border-radius: 50px 0 50px 0;
+}
+
+.block-soft-leaf {
+    width: 300px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    border-radius: 50px 110px 50px 110px;
+}
+
+.block-bend-rectangle {
+    border: 20px solid darkgreen;
+    border-left: 20px solid greenyellow;
+    border-right: 20px solid greenyellow;
+    padding: 10px;
+    border-radius: 150px / 30px;
+}
+
+.block-bend-leaf {
+    border: 20px solid darkgreen;
+    border-top: 20px solid greenyellow;
+    border-bottom: 20px solid greenyellow;
+    padding: 10px;
+    border-radius: 200px 80px / 50px 20px;
+}
+
+.block-bend-corner {
+    border: 20px solid greenyellow;
+    border-left: 20px solid darkgreen;
+    padding: 10px;
+    border-bottom-right-radius: 100%;
+
+}
+
+.block-stretched-diamonds {
+    border-image-slice: 22;
+    border-image-width: 20px;
+    border-image-outset: 10px;
+    border-image-repeat: stretch;
+    border-image-source: url("../media/page_2/diamond-pattern.png");
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.block-repeated-diamonds {
+    border-image-slice: 13;
+    border-image-width: 14px;
+    border-image-outset: 10px;
+    border-image-repeat: repeat;
+    border-image-source: url("../media/page_2/diamond-pattern.png");
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.block-small-diamonds {
+    border-image-slice: 27;
+    border-image-width: 12px;
+    border-image-outset: 10px;
+    border-image-repeat: repeat;
+    border-image-source: url("../media/page_2/diamond-pattern.png");
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.block-rough-edges {
+    border-image-slice: 115 185;
+    border-image-width: 20px;
+    border-image-outset: 10px;
+    border-image-repeat: stretch;
+    border-image-source: url("../media/page_2/rough-edges.png");
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.block-circles {
+    border-image-slice: 184 175;
+    border-image-width: 20px;
+    border-image-outset: 10px;
+    border-image-repeat: stretch;
+    border-image-source: url("../media/page_2/orange-circle.png");
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.block-repeated-circles {
+    border-image-slice: 180;
+    border-image-width: 14px 12px;
+    border-image-outset: 10px;
+    border-image-repeat: repeat;
+    border-image-source: url("../media/page_2/orange-circle.png");
+    border-style: solid;
+    padding: 10px;
+
+}

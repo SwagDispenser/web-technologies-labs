@@ -1,0 +1,80 @@
+div {
+    box-sizing: border-box;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    margin: 10px;
+    float: left;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px;
+    background: indianred;
+    text-decoration: none;
+}
+
+.site-logo {
+    float: left;
+    width: 70px;
+    height: 60px;
+}
+
+.columns-block {
+    column-count: 3;
+    column-gap: 35px;
+    column-width: 150px;
+    column-rule: 5px dotted red;
+    text-align: left;
+}
+
+.first-image {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.second-image {
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.third-image {
+    float: right;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+
+.fourth-image {
+    float: right;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+
+

@@ -1,0 +1,97 @@
+div {
+    box-sizing: border-box;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    margin: 10px;
+    float: left;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px;
+    background: indianred;
+    text-decoration: none;
+}
+
+.site-logo {
+    float: left;
+    width: 70px;
+    height: 60px;
+}
+
+.block-image {
+    width: 100%;
+    margin: 5px 0;
+    z-index: -1;
+    position: relative
+}
+
+.block-menu {
+    list-style: none;
+    float: right;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.headliner {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.left-sided-shadow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    box-shadow: -5px -5px 5px 3px green;
+}
+
+.all-sided-shadow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    box-shadow: 0 0 10px 10px green;
+}
+
+.right-sided-shadow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 5px 1px rgba(0, 128, 0, 0.5);
+}
+
+.semi-clear-shadow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    box-shadow: 0 0 30px 5px green;
+}
+
+.multicolour-shadow {
+    border: 1px solid green;
+    box-shadow: inset 5px 0 red, inset 0 5px green, inset -5px 0 blue, inset 0 -5px darkorange;
+}
+
+.twocolor-shadow {
+    border: 1px solid green;
+    box-shadow: 0 -12px 0 -7px orange, 0 12px 0 -7px darkgreen;
+}
+
