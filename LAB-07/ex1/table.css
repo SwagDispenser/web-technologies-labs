@@ -1,0 +1,40 @@
+.main-block {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 160px;
+    height: 90px;
+    background-color: green;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.sub-block {
+    position: absolute;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sub-block.top {
+    width: 180px;
+    height: 70px;
+    top: 20px;
+    left: 180px;
+}
+
+.sub-block.bottom {
+    width: 190px;
+    height: 70px;
+    top: 110px;
+    left: 180px;
+}
