@@ -1,0 +1,86 @@
+* {
+    font-family: Roboto Condensed, sans-serif;
+}
+
+hr {
+    width: 600px;
+    color: dimgrey;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    width: 500px;
+}
+
+.header-headliner {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.header-sub-headliner {
+    font-size: 17px;
+    color: grey;
+    margin-top: 9px;
+}
+
+.header-main-temperature-number {
+    font-size: 44px;
+}
+
+.header-main-temperature-type {
+    font-size: 15px;
+    color: grey;
+    float: right;
+    position: absolute;
+}
+
+.header-main-temperature-img {
+    float: left;
+    margin-right: 5px;
+}
+
+.header-main-temperature-info {
+    font-size: 17px;
+    color: grey;
+    justify-content: right;
+    float: right;
+    margin: 0px;
+}
+
+.header-main-temperature-info span {
+    color: dimgrey;
+}
+
+.days-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.days-container img {
+    margin: 0;
+    text-align: center;
+}
+
+.headliner {
+    font-weight: bold;
+    margin-left: 10px;
+    min-width: 100px;
+}
+
+.main-text {
+    color: darkslategrey;
+    min-width: 80px;
+}
+
+.main-text span {
+    color: grey;
+}
+
+
+

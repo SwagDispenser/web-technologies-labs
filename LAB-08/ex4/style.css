@@ -1,0 +1,558 @@
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    margin: 0 15px;
+    float: left;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav-menu li:hover {
+    color: darkred;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-menu li:hover {
+    color: darkred;
+}
+
+.favourite:active {
+    border: 3px solid black;
+}
+
+header ul li {
+    margin: 0 18px;
+    font-size: 15px;
+}
+
+header ul li:hover {
+    color: darkred;
+}
+
+header ul li:active {
+    font-size: 20px;
+    color: darkred;
+}
+
+header ul li:nth-last-child(1) {
+    margin-right: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .slogan {
+    margin-top: 70px;
+    background-color: rgba(128, 128, 128, 0.48);
+    padding: 30px 30px;
+}
+
+main .slogan h1 {
+    font-size: 35px;
+    margin: 30px 70px 20px 70px;
+    font-weight: lighter;
+}
+
+main .slogan p {
+    font-size: 15px;
+    margin: 0 70px 30px 70px;
+    font-weight: lighter;
+}
+
+.gallery-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: flex-start;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.headliner {
+    font-size: 22px;
+    margin: 7px;
+}
+
+.headliner span {
+    color: red;
+}
+
+.gallery-header .filter {
+    align-self: flex-end;
+    font-size: 22px;
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+
+.gallery-header .filter a {
+    text-decoration: none;
+    color: white;
+}
+
+.gallery-header .filter:hover {
+    background-color: indianred;
+}
+
+.gallery-header .filter:active {
+    background-color: darkred;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 80px 10px 30px;
+}
+
+.gallery .item {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.gallery img:active {
+    transform: scale(1.1);
+    filter: brightness(4);
+}
+
+.feedback {
+    margin: 0 60px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback p {
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.feedback .feedback-button {
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    width: 15%;
+    margin: 0;
+}
+
+.feedback .feedback-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.feedback .feedback-button:hover {
+    background-color: indianred;
+}
+
+.feedback .feedback-button:active {
+    background-color: darkred;
+}
+
+.services {
+    text-align: left;
+}
+
+.services-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.services-header h2 span {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.services-header p {
+    max-width: 800px;
+    font-size: 15px;
+    margin: 0 0 50px 0;
+    color: #777;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 40px;
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    text-align: center;
+}
+
+.icon-circle {
+    width: 120px;
+    height: 120px;
+    background: #f4f6f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+.service-item h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.service-item:hover .icon-circle {
+    border: 3px solid darkred;
+}
+
+.service-item:active .icon-circle {
+    border: 6px solid darkred;
+}
+
+.journal {
+    font-family: "Roboto", Arial, sans-serif;
+    color: grey;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.journal-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.journal-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.journal-header span {
+    color: #e74c3c;
+}
+
+.journal-header p {
+    max-width: 800px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.journal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.journal-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    padding: 12px;
+    transition: background-color .25s ease;
+    border-radius: 6px;
+}
+
+.journal-item img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex: 0 0 160px;
+}
+
+.journal-content {
+    flex: 1;
+}
+
+.journal-content .meta {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.journal-content h3 {
+    font-size: 16px;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.journal-content .text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.journal-item:hover {
+    background-color: rgba(205, 92, 92, 0.06);
+}
+
+.journal-item:active {
+    background-color: rgba(81, 49, 49, 0.06);
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3c3c3c;
+}
+
+footer p {
+    margin: 50px 0 0 0;
+    font-size: 12px;
+    color: grey;
+}
+
+footer ul {
+    color: white;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+footer ul li {
+    margin: 0 10px 40px 0;
+}
+
+footer ul li:hover {
+    border: 1px solid darkred;
+    border-radius: 90px;
+}
+
+footer ul li:active {
+    border: 3px solid darkred;
+    border-radius: 90px;
+
+}
+
+@media (max-width: 768px) {
+    .gallery .item {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+
+    .service-item {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+
+    .journal-list {
+        flex-direction: column;
+        gap: 28px;
+        align-items: stretch;
+    }
+
+    .journal-item {
+        flex-direction: row;
+        max-width: 100%;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .journal-item img {
+        width: 140px;
+        height: 105px;
+        flex: 0 0 140px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 20px 0;
+        gap: 15px;
+        text-align: center;
+        display: none;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-menu ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery .item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .service-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .services-header p {
+        margin-bottom: 40px;
+    }
+
+    .journal-item {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 0;
+    }
+
+    .journal-item img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        flex: none;
+    }
+
+    .journal-content {
+        padding: 0 6px 18px 6px;
+    }
+
+    .journal-content .meta {
+        text-align: center;
+    }
+
+    .journal-content h3 {
+        margin: 6px 0 10px 0;
+    }
+}
